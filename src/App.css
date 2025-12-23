@@ -1,0 +1,149 @@
+.app-container {
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  border-radius: 20px;
+  height: 80vh;
+  background-color: #f1eeeb;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.header-container {
+  width: 100%;
+  height: fit-content;
+  background-color: #c1ccd2;
+  padding: 20px;
+  margin:  auto;
+  text-align: left;
+  border-radius: 20px;
+
+  background: url("../public/images/image1.jpg"), 
+     linear-gradient(to right, #bec7ce 0%, #bec7ce 50%, #c1ccd2 50%, #c1ccd2 100%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+
+.main-header {
+  font-size: 15px;
+  font-weight: 500;
+  color: #1a202c;
+  margin: 0;
+  margin-left: 15px;
+}
+
+.main-header .highlight {
+  font-weight: 700;
+  color: #222;
+}
+
+@media (min-width: 640px) {
+  .main-header {
+    font-size: 25px;
+  }
+}
+
+.description {
+
+  font-weight: 400;
+  font-size: 15px;
+  margin: 0;
+  margin-left: 15px;
+  color: #666;
+}
+
+.form-container {
+  margin-bottom: 20px;
+  margin-top: 30px;
+  padding: 30px;
+  border-radius: 20px;
+  height: 70%;
+
+   background:
+    /* capa 1: fade más agresivo y completo */
+    
+
+    /* capa 2: imagen */
+    url("../public/images/image1.jpg")
+      no-repeat
+      center -110px / cover,
+
+    /* capa 3: fondo base */
+    linear-gradient(
+      to right,
+      #98a5ad 50%,
+      #909da5 50%
+    );
+}
+.search-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  width: 50%;
+}
+.wide-input-label{
+  color: #333;
+  padding-left: 10px;
+}
+
+.wide-input {
+  width: 50%;
+  padding: 5px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.search-button {
+  padding: 7px;
+  font-size: 16px;
+  cursor: pointer;
+  align-self: center;
+  width: 45px;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.10),
+    rgba(0, 0, 0, 0.02)
+  );
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  color: #0f172a;
+  font-weight: 400;
+  border-radius: 50%;
+  outline: none;
+
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.5),
+    0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.search-button:hover {
+  opacity: 0.7;
+}
+
+.result-container {
+  margin-top: 20px;
+  transition: height 0.3s ease-out;
+  overflow: hidden;
+}
+
+.loader-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.result {
+  background-color: #f8f9fa;
+  border: 1px solid #e9ecef;
+  border-radius: 4px;
+  padding: 15px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  color: black;
+  font-weight: bold;
+  text-align: left; /* Align text to the left */
+}

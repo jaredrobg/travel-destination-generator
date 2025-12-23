@@ -1,0 +1,45 @@
+{
+  "name": "travel-generator",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@ardatan/aggregate-error": "^0.0.6",
+    "@aws-amplify/backend-data": "^1.6.2",
+    "@aws-amplify/cli": "^14.2.3",
+    "@aws-amplify/codegen-ui": "^2.20.3",
+    "@aws-amplify/data-construct": "^1.16.3",
+    "@aws-amplify/form-generator": "^1.2.6",
+    "@aws-amplify/ui-react": "^6.13.2",
+    "@graphql-tools/utils": "^10.11.0",
+    "aws-amplify": "^6.15.9",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  },
+  "devDependencies": {
+    "@aws-amplify/backend": "^1.19.0",
+    "@aws-amplify/backend-cli": "^1.8.1",
+    "@eslint/js": "^9.21.0",
+    "@types/node": "^24.10.1",
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
+    "@vitejs/plugin-react": "^4.3.4",
+    "aws-cdk-lib": "^2.216.0",
+    "constructs": "^10.4.4",
+    "esbuild": "^0.27.2",
+    "eslint": "^9.21.0",
+    "eslint-plugin-react-hooks": "^5.1.0",
+    "eslint-plugin-react-refresh": "^0.4.19",
+    "globals": "^15.15.0",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.24.1",
+    "vite": "^6.2.0"
+  }
+}
